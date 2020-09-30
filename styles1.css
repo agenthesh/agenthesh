@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'D-DIN Condensed';
+    src: url('D-DINCondensed.woff2') format('woff2'),
+        url('D-DINCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('D-DIN.woff2') format('woff2'),
+        url('D-DIN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-wrapper{
+    padding: 0 150px 0 150px;  
+	margin: 0 75px 0 75px; 
+	position: relative;
+    background-color: #90c2d9;
+    overflow: auto;
+}
+
+.main-page{
+    background-color: #9029;
+}
+
+h1,h3,h4{
+    margin: 0;
+}
+
+.heading-section{
+    margin-top: 200px;
+    text-align: right;
+    margin-right: 250px;
+    font-family: 'D-DIN Condensed';
+    font-size: xx-large;
+}
+
+.personal-summary{
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 250px;
+    font-family: 'D-DIN Condensed';
+    font-size: xx-large;
+}
+
+.nav-icons{
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+}
+
+.nav-icons a{
+    margin-left: 30px;
+    font-size: 48px;
+    
+}
+
+.nav-icons a:hover{
+    color: gray;
+}
+
+
