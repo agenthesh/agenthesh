@@ -34,7 +34,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .main-page{
-    background-image: url("photo-1505506874110-6a7a69069a08.jpeg");
+    background-image: url("bgIMG.jpg");
     background-attachment: fixed;
 }
 
@@ -144,13 +144,6 @@ hr{
         margin-left: 10%;
         font-size: 0.75em;
     }
-    
-    /* hr{
-        background-color: gray;
-        height: 0.1em;
-        border: none;
-        margin: 0 50px 50px 50px;
-    } */
     
     .content{
         font-size: 0.5em;
