@@ -47,7 +47,7 @@ h1,h3,h4{
     text-align: right;
     margin-right: 25%;
     font-family: 'D-DIN Condensed';
-    font-size: xx-large;
+    font-size: 2em;
 }
 
 .personal-summary{
@@ -56,7 +56,7 @@ h1,h3,h4{
     margin-left: 20%;
     margin-right: 25%;
     font-family: 'D-DIN Condensed';
-    font-size: x-large;
+    font-size: 1.5em;
 }
 
 .nav-icons{
@@ -69,7 +69,7 @@ h1,h3,h4{
 
 .nav-icons a{
     margin-left: 12%;
-    font-size: 300%;
+    font-size: 3em;
     
 }
 
