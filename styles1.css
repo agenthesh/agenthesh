@@ -36,6 +36,7 @@ a, a:hover, a:focus, a:active {
 .main-page{
     background-image: url("bgIMG.jpg");
     background-attachment: fixed;
+    background-color: black;
 }
 
 h1,h3,h4{
