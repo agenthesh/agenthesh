@@ -148,8 +148,8 @@ hr{
     border: none;
     margin: 1% 0 1% 0;
     background: none;
-    border-bottom: 0.1em solid white;
-    color: white;
+    border-bottom: 0.1em solid black;
+    color: black;
     outline: none;
 }
 
@@ -159,10 +159,10 @@ hr{
     width: 75%;
     font-family: "DIN Condensed";
     font-size: 1em;
-    border: 0.1em solid white;
+    border: 0.1em solid black;
     margin: 1% 0 1% 0;
     background: none;
-    color: white;
+    color: black;
 }
 
 .form-row input:focus{
@@ -184,7 +184,17 @@ hr{
 }
 
 ::placeholder{
-    color: white;
+    color: black;
+}
+
+.form-row input[type="submit"]{
+    animation-name: none;
+    border: none;
+    text-align: center;
+}
+
+.form-row input[type="submit"]:hover{
+    color: white !important;
 }
 
 
@@ -206,6 +216,14 @@ hr{
     }
     
     .content{
+        font-size: 0.5em;
+    }
+
+    .form-content{
+        font-size: 0.5em;
+    }
+
+    .form-row input{
         font-size: 0.5em;
     }
 } 
@@ -376,34 +394,34 @@ hr{
 @keyframes colorBorder {
     0%
     {
-        border-bottom: 0.2em solid white;
+        border-bottom: 0.1em solid black;
     }
 
     50%
     {
-        border-bottom: 0.2em solid rgba(255, 255, 255, 0.1);
+        border-bottom: 0.1em solid rgba(100, 100, 100, 0.1);
     }
 
     100%
     {
-        border-bottom: 0.2em solid gray;
+        border-bottom: 0.1em solid white;
     }
 }
 
 @keyframes colorTABorder {
     0%
     {
-        border: 0.2em solid white;
+        border: 0.1em solid black;
     }
 
     50%
     {
-        border: 0.2em solid rgba(255, 255, 255, 0.1);
+        border: 0.1em solid rgb(100, 100, 100, 0.1);
     }
 
     100%
     {
-        border: 0.2em solid gray;
+        border: 0.1em solid white;
     }
 }
 
