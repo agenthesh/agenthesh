@@ -13,7 +13,7 @@
     <div id="main-wrapper">
         
         <div class="heading-section">
-            <h3>VIDEO INTRODUCTION</h3>
+            <h3>CONTACT ME</h3>
             <h1>HUSSAIN SURTI</h1>
         </div>
 
@@ -23,20 +23,40 @@
 
         <nav class="nav-icons">
             <a class="fa fa-video-camera" href="videoCV.html"></a>
-            <a class="fa fa-question" href="#"></a>
-            <a class="fa fa-envelope" href="#"></a>
+            <a class="fa fa-question" href="aboutMe.html"></a>
+            <a class="fa fa-envelope" href="mailPage.html"></a>
             <a class="fa fa-twitter" href="https://twitter.com/agenthesh"></a>
             <a class="fa fa-github" href="https://github.com/agenthesh"></a>
         </nav>
 
         <hr>
 
-        <div class="video-holder">
+        <div class="form-content">
 
-            <video width="90%" height="90%" controls preload="auto" poster="testPoster.png">
-                <source src="testVid.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <form action="mailto:notarealemailtotallyfake@gmail.com" method="POST" enctype="text/plain">
+
+                <div class="form-row">
+                    <label>Name:</label>
+                    <input type="text" name="name">
+                    <br>
+                </div>
+                
+                <div class="form-row">
+                    <label>Email:</label>
+                    <input type="email" name="email">
+                    <br>
+                </div>
+
+                <div class="form-row">
+                    <label>Message:</label>
+                    <textarea name="message"></textarea>
+                    <br>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
 
         </div>
         
