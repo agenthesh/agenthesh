@@ -1,9 +1,10 @@
 .card-header{
     text-align: center;
     margin: 0 1.5% 1% 1.5%;
-    font-family: 'D-DIN Condensed';
+    font-family: 'TitilliumWeb-Black';
     font-size: 2em;
     color: #ffc815;
+    letter-spacing: 0.05em;
 }
 
 .card-holder{
@@ -40,7 +41,7 @@
 
 .card h3{
     color: white;
-    font-family: "DIN Condensed";
+    font-family: "TitilliumWeb-SemiBold";
     line-height: 8em;
     font-size: 2em;
     z-index: 1000;

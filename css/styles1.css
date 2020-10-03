@@ -1,7 +1,38 @@
 @font-face {
-    font-family: 'D-DIN Condensed';
-    src: url('fonts/D-DINCondensed.woff2') format('woff2'),
-        url('fonts/D-DINCondensed.woff') format('woff');
+    font-family: 'TitilliumWeb';
+    src: url('fonts/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Black';
+    src: url('fonts/TitilliumWeb-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url('fonts/TitilliumWeb-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url('fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Light';
+    src: url('fonts/TitilliumWeb-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -37,15 +68,20 @@ h1,h3,h4,h5{
 }
 
 .heading-section{
-    margin-top: 13%;
+    margin-top: 12%;
     text-align: right;
     margin-right: 25%;
-    font-family: 'D-DIN Condensed';
+    font-family: 'TitilliumWeb-Black';
     font-size: 2em;
+    line-height: 1.5em;
 }
 
 .heading-section h3{
     color: #ffc815;
+}
+
+.heading-section h1{
+    letter-spacing: 0.03em;
 }
 
 .heading-section a:hover{
@@ -57,8 +93,9 @@ h1,h3,h4,h5{
     margin-top: 1%;
     margin-left: 20%;
     margin-right: 25%;
-    font-family: 'D-DIN Condensed';
+    font-family: 'TitilliumWeb-Light';
     font-size: 1.5em;
+    line-height: 1em;
 }
 
 .nav-icons{
@@ -86,7 +123,7 @@ hr{
 }
 
 .content{
-    font-family: 'D-DIN Condensed';
+    font-family: 'TitilliumWeb-Bold';
     font-size: 1.5em;
     margin: 0 0 5% 0;
 }
@@ -116,14 +153,14 @@ hr{
     font-weight: 1000;
     margin:0;
     color:rgb(200,200,200);
+    font-family: 'TitilliumWeb-SemiBold';
 }
 
 .content p{
     font-size: 0.9em;
-    font-style: italic;
-    font-weight: lighter;
     margin:0;
     padding-right: 1%;
+    font-family: 'TitilliumWeb-Light';
 }
 
 .video-holder{
@@ -134,7 +171,7 @@ hr{
 .form-content{
     text-align: center;
     margin: 0 1.5% 4% 1.5%;
-    font-family: 'D-DIN Condensed';
+    font-family: 'TitilliumWeb-SemiBold';
     font-size: 1.5em;
 }
 
@@ -144,7 +181,7 @@ hr{
 
 .form-row input{
     width: 75%;
-    font-family: "DIN Condensed";
+    font-family: "TitilliumWeb-SemiBold";
     font-size: 1em;
     border: none;
     margin: 1% 0 1% 0;
@@ -158,7 +195,7 @@ hr{
     resize: none;
     outline:none;
     width: 75%;
-    font-family: "DIN Condensed";
+    font-family: "TitilliumWeb-SemiBold";
     font-size: 1em;
     border: 0.1em solid black;
     margin: 1% 0 1% 0;
