@@ -76,3 +76,11 @@
         line-height: 15em;
     }
 }
+
+@media(hover: hover) and (pointer: fine) {
+    .card:hover{
+        transform: scale(1.5);
+        transition: all 2s;
+        background-blend-mode: normal;
+    }
+}
