@@ -1,0 +1,78 @@
+.card-header{
+    text-align: center;
+    margin: 0 1.5% 1% 1.5%;
+    font-family: 'D-DIN Condensed';
+    font-size: 2em;
+    color: #ffc815;
+}
+
+.card-holder{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1% 1.5% 10% 1.5%;
+}
+
+.card{
+    position: relative;
+    width: 50%;
+    height: 15em;
+    margin: 0 3% 0 3%;
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    transition: all .7s;
+    background-color: rgb(202, 201, 201);
+    background-blend-mode: multiply;
+}
+
+.card:after {
+    content: " ";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+.card h3{
+    color: white;
+    font-family: "DIN Condensed";
+    line-height: 8em;
+    font-size: 2em;
+    z-index: 1000;
+}
+.card:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+    background-blend-mode: normal;
+}
+.card:hover h3{
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .card-header{
+        font-size: 0.75em;
+    }
+
+    .card{
+        height:8em;
+        border-radius:0.5em;
+    }
+
+    
+    .card h3{
+        font-size: 0.5em;
+        line-height: 15em;
+    }
+}

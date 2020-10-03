@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'D-DIN Condensed';
+    src: url('fonts/D-DINCondensed.woff2') format('woff2'),
+        url('fonts/D-DINCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-wrapper{
+    padding: 0 10% 0 10%;  
+	margin: 0 5% 0 5%; 
+	position: relative;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation-name: fadeIn;
+    animation-delay: 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.main-page{
+    background-image: url("../media/bgIMG.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center;
+}
+
+h1,h3,h4,h5{
+    margin: 0;
+}
+
+.heading-section{
+    margin-top: 13%;
+    text-align: right;
+    margin-right: 25%;
+    font-family: 'D-DIN Condensed';
+    font-size: 2em;
+}
+
+.heading-section h3{
+    color: #ffc815;
+}
+
+.heading-section a:hover{
+    color: #ffc815;;
+}
+
+.personal-summary{
+    text-align: right;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 25%;
+    font-family: 'D-DIN Condensed';
+    font-size: 1.5em;
+}
+
+.nav-icons{
+    text-align: right;
+    margin-top: 1.5%;
+    margin-left: 15%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+}
+
+.nav-icons a{
+    margin-left: 12%;
+    font-size: 2.75em;
+}
+
+.nav-icons a:hover{
+    color: #ffc815;
+}
+
+hr{
+    background-color: black;
+    height: 0.1em;
+    border: none;
+    margin: 0 1.5% 4% 1.5%;
+}
+
+.content{
+    font-family: 'D-DIN Condensed';
+    font-size: 1.5em;
+    margin: 0 0 5% 0;
+}
+
+.content-header{
+    margin: 0 10% 0 76%;
+    text-align: left;
+    color: #ffc815;
+    font-size: 1em;
+}
+
+.content-body-first{
+    margin-top: -2%;
+    margin-left: 20%;
+    margin-right: 25%;
+    text-align: right;
+}
+
+.content-body{
+    margin-top: 1.5%;
+    margin-left: 20%;
+    margin-right: 25%;
+    text-align: right;
+}
+
+.content label{
+    font-weight: 1000;
+    margin:0;
+    color:rgb(200,200,200);
+}
+
+.content p{
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: lighter;
+    margin:0;
+    padding-right: 1%;
+}
+
+.video-holder{
+    text-align: center;
+    margin: 0 1.5% 4% 1.5%;
+}
+
+.form-content{
+    text-align: center;
+    margin: 0 1.5% 4% 1.5%;
+    font-family: 'D-DIN Condensed';
+    font-size: 1.5em;
+}
+
+.form-row {
+    margin: 0 0 2% 0;
+}
+
+.form-row input{
+    width: 75%;
+    font-family: "DIN Condensed";
+    font-size: 1em;
+    border: none;
+    margin: 1% 0 1% 0;
+    background: none;
+    border-bottom: 0.1em solid black;
+    color: black;
+    outline: none;
+}
+
+.form-row textarea{
+    resize: none;
+    outline:none;
+    width: 75%;
+    font-family: "DIN Condensed";
+    font-size: 1em;
+    border: 0.1em solid black;
+    margin: 1% 0 1% 0;
+    background: none;
+    color: black;
+}
+
+.form-row input:focus{
+    border-bottom: 0.1em solid #ffc815;;
+    animation-name: colorBorder;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.form-row textarea:focus{
+    border-bottom: 0.1em solid #ffc815;;
+    animation-name: colorTABorder;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+::placeholder{
+    color: black;
+}
+
+.form-row input[type="submit"]{
+    animation-name: none;
+    border: none;
+    text-align: center;
+}
+
+.form-row input[type="submit"]:hover{
+    color: #ffc815;
+}
+
+
+/* Media Queries - Responsive Web Design */
+
+@media only screen and (max-width: 600px) {
+    
+    .heading-section{
+        font-size: 1em;
+    }
+    
+    .personal-summary{
+        font-size: 0.5em;
+    }
+    
+    .nav-icons a{
+        margin-left: 10%;
+        font-size: 0.75em;
+    }
+    
+    .content{
+        font-size: 0.5em;
+    }
+
+    .form-content{
+        font-size: 0.5em;
+    }
+
+    .form-row input{
+        font-size: 0.5em;
+    }
+} 
+
+
+
+
+/* PreLoader */
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 250px;
+    height: 250px;
+    margin: -125px 0 0 -125px;
+    border-radius: 10%;
+    border: 6px solid transparent;
+    border-color: #f7e5a9;
+
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    animation-fill-mode: forwards;
+
+    z-index: 1001;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 30%;
+    border: 8px solid transparent;
+    border-color: #fcd65c;;
+
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    animation-fill-mode: forwards;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    right: 60px;
+    bottom: 60px;
+    border-radius: 40%;
+    border: 10px solid transparent;
+    border-color: #ffc815;
+
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    animation-fill-mode: forwards;
+}
+
+/* Preloader Animation */
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width:51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+    animation-name: fadeOut;
+    animation-duration: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+    animation-name: goLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    animation-delay: 2.75s;
+}
+    
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+    animation-name: goRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    animation-delay: 2.75s;
+}
+
+@keyframes goRight{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes goLeft{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeOut{
+
+    0%{
+    }
+
+    100%{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        z-index: 0;
+    }
+
+    to{
+        z-index: 2000;
+    }
+}
+
+@keyframes spin {
+
+    0%   { 
+        transform: rotate(0deg);
+        transform: rotate(0deg);  
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);  
+        transform: rotate(360deg);  
+        transform: rotate(360deg);
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes colorBorder {
+    0%
+    {
+        border-bottom: 0.1em solid black;
+    }
+
+    50%
+    {
+        border-bottom: 0.1em solid rgba(100, 100, 100, 0.1);
+    }
+
+    100%
+    {
+        border-bottom: 0.1em solid #ffc815;;
+    }
+}
+
+@keyframes colorTABorder {
+    0%
+    {
+        border: 0.1em solid black;
+    }
+
+    50%
+    {
+        border: 0.1em solid rgb(100, 100, 100, 0.1);
+    }
+
+    100%
+    {
+        border: 0.1em solid #ffc815;;
+    }
+}
+
