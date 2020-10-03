@@ -69,6 +69,7 @@ h1,h3,h4,h5{
 
 .heading-section{
     margin-top: 12%;
+    margin-bottom: 3%;
     text-align: right;
     margin-right: 25%;
     font-family: 'TitilliumWeb-Black';
@@ -93,6 +94,7 @@ h1,h3,h4,h5{
     margin-top: 1%;
     margin-left: 20%;
     margin-right: 25%;
+    margin-bottom: 5%;
     font-family: 'TitilliumWeb-Light';
     font-size: 1.5em;
     line-height: 1em;
